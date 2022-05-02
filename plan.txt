@@ -1,0 +1,47 @@
+ <------ String methods ------>
+
+We have worked with strings already and chances are that you have run into some of the methods on strings by now. 
+There are a few we didn't address specifically just yet and we are going to discuss them in this section. ✅ 
+
+🎁 1. <------ Combining strings ------>
+
+When you want to concatenate strings, you can use the concat() method. 
+This does not change the original string(s); it returns the combined result as a string. ✅ 
+
+🎁 2.  <------ Converting an array to a string ------>
+
+With the join() method you can convert an array to a string. Here is a basic example:
+
+let letters = ["a", "b", "c"];
+let x = letters.join();
+console.log(x); ✅ 
+
+
+The type of x is string. 
+If you want something else other than a comma, you can specify that, like this:
+let letters = ["a", "b", "c"];
+let x = letters.join('-');
+console.log(x); ✅ 
+
+
+🎁 3. <------ Working with index and positions ------>
+
+ let notFound = searchStr.search("JavaScript");
+console.log(notFound); ✅ 
+
+search() will accept a regex format as input, whereas indexOf() just takes a string.
+indexOf() is faster than the search() method, 
+so if you just need to look for a string, use indexOf().
+ If you need to look for a string pattern, you'll have to use the search() method.
+
+ 🎁 4. <------ Creating substrings ------>
+
+ With the slice(start, end) method we can create substrings.
+ This does not alter the original string, but returns a new string with the substring.
+ It takes two parameters, the first is the index at which it starts and the second is the end index. 
+ If you leave out the second index it will just continue until the end of the string from the start.
+
+ 🎁 5. <------ Replacing parts of the string ------>
+
+ If you need to replace a part of the string, you can use the replace(old, new) method.
+ It takes two arguments, one string to look for in the string and one new value to replace the old value with. 
